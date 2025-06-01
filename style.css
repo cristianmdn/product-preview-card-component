@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    padding: 20px;
+}
+.main {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+}
+.desktop-img {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mobile-img {
+    display: none;
+}
+.text {
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 34px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.perfume {
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.description {
+    font-weight: 500;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.price p {
+    text-decoration: line-through;
+}
+.cart {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.cart:hover, .cart:focus {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+    outline: none;
+}
+h1, h2 {
+    font-family: "Fraunces", "Montserrat", sans-serif;
+}
+h1 {
+    color: #000;
+    font-size: 34px;
+}
+h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+@media (max-width: 620px) {
+    .main {
+        flex-direction: column;
+    }
+    .text {
+        gap: 15px;
+        padding: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .desktop-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .mobile-img, .text {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
