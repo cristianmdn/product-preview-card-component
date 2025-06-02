@@ -18,11 +18,11 @@ body {
     max-width: 600px;
     width: 100%;
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .desktop-img {
     width: 50%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 .mobile-img {
     display: none;
@@ -34,8 +34,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 34px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 .perfume {
     letter-spacing: 3px;
@@ -67,6 +65,7 @@ body {
 }
 .cart:hover, .cart:focus {
     background-color: hsl(158, 42%, 18%);
+    transition: background-color ease-in-out 0.5s;
     cursor: pointer;
     outline: none;
 }
@@ -89,16 +88,12 @@ h2 {
     .text {
         gap: 15px;
         padding: 25px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
     .desktop-img {
         display: none;
     }
     .mobile-img {
         display: block;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
     }
     .mobile-img, .text {
         width: 100%;
